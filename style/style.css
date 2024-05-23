@@ -1,0 +1,402 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --green: #34d399;
+  --blue: #172554;
+}
+
+.header-container {
+  background-image: url(/assets/images/banner-bk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-clip: padding-box;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 60vh;
+  width: 80vw;
+}
+
+.superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.superior i {
+  font-size: 3rem;
+}
+
+.superior a {
+  font-size: 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.titulo-boton {
+  color: var(--white);
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.titulo-text {
+  width: 35vw;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-text h1 {
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.boton a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.boton {
+  background-color: var(--green);
+  border-radius: 40px;
+  text-align: center;
+  width: 8.5rem;
+  padding: 0.8rem;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.principal-container {
+  width: 80vw;
+}
+
+.titulo-main {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.linea-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items1 {
+  width: 20rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.items1 h3 {
+  padding-bottom: 1rem;
+}
+
+.linea-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item2 {
+  width: 35rem;
+  margin-top: 6rem; 
+  
+}
+
+.item2 h2 {
+  padding-bottom: 1.5rem;
+  font-size: 1.7rem;
+}
+
+
+
+.linea-3 {
+
+  padding-bottom: 3rem;
+}
+
+.fondo {
+  background: linear-gradient(170deg, rgb(255, 255, 255) 50%,rgba(52,211,153,1) 50%);
+  position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.botonBlue {
+  margin-top: 1.5rem;
+  border: solid 1px black;
+  width: 7rem;
+  background-color: var(--blue);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.botonBlue a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.img-item2 img {
+  width: 23rem;
+  margin-top: 6rem;
+}
+
+
+
+.planContainer {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.planContainer0 {
+  
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.plan {
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+  height: auto;
+  padding: 2rem 1rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.plan h3 {
+  text-transform: uppercase;
+}
+
+.negrita {
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+.negrita b {
+  font-size: 2.5rem;
+}
+
+.planBoton {
+  margin: 1.5rem;
+  border: solid 1px black;
+  width: 6rem;
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+.planBoton:hover {
+  background-color: var(--green);
+  border: solid 1px var(--green);
+}
+
+.planBoton a {
+  text-decoration: none;
+  color: black;
+  border: solid 2px red;
+  padding: 0.4rem;
+}
+
+.planAzul {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.planBotonAzul {
+  background-color: var(--green);
+  border: solid 1px var(--green);
+}
+
+.planBotonAzul:hover {
+  background-color: var(--white);
+  border: solid 1px var(--white);
+}
+
+
+.patrocinadores {
+  background-color: #dadadb;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer {
+  
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  background-image: url(/assets/images/contact-bk.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  height: auto;
+  
+}
+
+.container-footer {
+ 
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+}
+
+.formContainer {
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--green);
+ 
+}
+
+.textContact {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  gap: 1rem;
+}
+
+.nameEmail {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.itemForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemForm input{
+  border: solid 2px var(--green);
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  padding: .3rem;
+  background: none;
+}
+
+.itemForm input[type="textarea"]{
+  padding: 1.5rem;
+}
+
+
+.submit {
+  background-color: var(--green);
+  padding: .4rem;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  cursor: pointer;
+}
+
+.copy {
+  color: var(--white);
+  padding: 2rem;
+  background-color: var(--blue);
+  
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.redes {
+  
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  margin: auto 9rem; 
+}
+
+.copy p {
+  margin: auto 4rem; 
+}
+
+.red {
+  border: solid 1px var(--white);
+  padding: .3rem;
+  display: flex;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: var(--white);
+}
+
+
+
+
+
